@@ -1,0 +1,44 @@
+<!-- formating table -->
+<!DOCTYPE html> 
+<html> 
+<head> 
+  <script src="jquery-3.7.1.min.js"></script> 
+  <script> 
+    $(document).ready(function () { 
+      $('#myTable').find('th').css({ 
+        'background-color': 'blue', 
+        'text-align': 'center' 
+      }); 
+      $('#myTable').find('td').css({ 
+        'border': '1px solid red', 
+        'padding': '8px' 
+      }); 
+      $('#myTable tbody tr:even').css('font-weight', 'bold'); 
+      $('#myTable tbody tr:odd').css('font-style', 'italic'); 
+    }); 
+  </script> 
+</head> 
+<body> 
+  <table id="myTable"> 
+    <thead> 
+      <tr> 
+        <th>SQN</th> 
+        <th>Name</th> 
+        <th>Location</th> 
+      </tr> 
+    </thead> 
+    <tbody> 
+      <tr> 
+        <td>1</td> 
+        <td>Ali</td> 
+        <td>Hodan</td> 
+      </tr> 
+      <tr> 
+        <td>2</td> 
+        <td>Ahmed</td> 
+        <td>Shibis</td> 
+      </tr> 
+    </tbody> 
+  </table> 
+</body> 
+</html>
